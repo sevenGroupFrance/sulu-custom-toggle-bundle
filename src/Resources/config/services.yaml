@@ -3,5 +3,5 @@ services:
     autowire: true
     autoconfigure: true
   color_picker_custom_test:
-    class: SevenGroupFrance\SuluColorPickerBundle\Content\Types\ColorPickerCustom
-    tags: [{ name: "sulu.content.type", alias: "color_picker_custom" }]
+    class: SevenGroupFrance\SuluCustomToggleBundle\Content\Types\CustomToggle
+    tags: [{ name: "sulu.content.type", alias: "custom_toggle" }]
