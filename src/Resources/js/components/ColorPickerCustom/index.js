@@ -1,3 +1,3 @@
-import ColorPickerCustom from "./ColorPickerCustom";
+import CustomToggle from "./CustomToggle";
 
-export default ColorPickerCustom;
+export default CustomToggle;
