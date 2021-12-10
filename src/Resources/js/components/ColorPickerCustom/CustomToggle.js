@@ -1,5 +1,6 @@
 import React from 'react';
 import Switch from 'react-switch';
+import './customToggle.scss';
 
 class CustomToggle extends React.PureComponent {
   constructor() {
