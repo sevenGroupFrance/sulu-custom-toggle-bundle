@@ -1,5 +1,5 @@
 <?php
-namespace SevenGroupFrance\SuluColorPickerBundle\DependencyInjection;
+namespace SevenGroupFrance\SuluCustomToggleBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\Loader;
 /**
  * SecurityHeadersExtension
  */
-class ColorPickerCustomExtension extends Extension
+class CustomToggleExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
