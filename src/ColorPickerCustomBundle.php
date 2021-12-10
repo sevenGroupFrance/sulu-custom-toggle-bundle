@@ -1,10 +1,10 @@
 <?php
 
-namespace sevenGroupFrance\suluColorPickerBundle;
+namespace sevenGroupFrance\suluCustomToggleBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class ColorPickerCustomBundle extends Bundle
+class CustomToggleBundle extends Bundle
 {
 
 }
