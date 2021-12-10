@@ -1,4 +1,4 @@
 import { fieldRegistry } from 'sulu-admin-bundle/containers';
-import ColorPickerCustom from './components/ColorPickerCustom/ColorPickerCustom';
+import ColorPickerCustom from './components/CustomToggle/CustomToggle';
 
-fieldRegistry.add('color_picker_custom', ColorPickerCustom);
+fieldRegistry.add('custom_toggle', CustomToggle);
