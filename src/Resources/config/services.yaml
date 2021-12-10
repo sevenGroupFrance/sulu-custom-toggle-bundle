@@ -1,0 +1,7 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+  color_picker_custom_test:
+    class: sevenGroupFrance\suluColorPickerBundle\Content\Types\ColorPickerCustom
+    tags: [{ name: "sulu.content.type", alias: "color_picker_custom" }]

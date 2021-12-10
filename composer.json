@@ -1,0 +1,29 @@
+{
+    "name": "sevengroupfrance/sulu-color-picker-bundle",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Tenreiro Benjamin",
+            "email": "tenreiro.benjamin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "sevenGroupFrance\\suluColorPickerBundle\\": "src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sevenGroupFrance/sulu-color-picker-bundle/"
+        },
+        {
+            "type": "path",
+            "url": "../../../assets/admin/node_modules",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
+}

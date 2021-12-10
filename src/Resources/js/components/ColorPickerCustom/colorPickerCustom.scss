@@ -1,0 +1,29 @@
+[class*=radio-container] {
+    display: flex;
+    margin-bottom: 0 !important;
+    > label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0 !important;
+    }
+    > div {
+        margin-left: auto;
+        > div {
+            > div[class*=color-picker-radiogroup] {
+                display: flex;
+                > label {
+                    margin-top: unset !important;
+                    margin-left: 1em;
+                    > span {
+                        min-height: 20px;
+                        min-width: 20px;
+                        > input+span {
+                            min-width: 23px;
+                            min-height: 23px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
