@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "sevenGroupFrance\\suluCustomToggleBundle\\": "src"
+            "SevenGroupFrance\\suluCustomToggleBundle\\": "src"
         }
     },
     "repositories": [
