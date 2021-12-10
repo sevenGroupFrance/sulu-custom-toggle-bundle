@@ -31,3 +31,6 @@ This bundle will import a custom toggle from the [react-switch](https://www.npmj
 7. In `assets/admin`, `npm run watch` or `npm run build`
 
 For further customisation, please refer to the [official page](https://www.npmjs.com/package/react-switch)
+
+## Use in your template files
+Once installed, to use this new content type, you'll have to create a new property with the type `custom_toggle`.
