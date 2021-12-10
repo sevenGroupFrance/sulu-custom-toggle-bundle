@@ -1,5 +1,5 @@
 <?php
-namespace sevenGroupFrance\suluColorPickerBundle\DependencyInjection;
+namespace SevenGroupFrance\SuluColorPickerBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
