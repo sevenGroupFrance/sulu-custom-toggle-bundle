@@ -34,3 +34,5 @@ For further customisation, please refer to the [official page](https://www.npmjs
 
 ## Use in your template files
 Once installed, to use this new content type, you'll have to create a new property with the type `custom_toggle`.
+
+![How to use the new content type](assets/images/ct-5.png)
