@@ -1,29 +1,17 @@
-[class*=radio-container] {
-    display: flex;
-    margin-bottom: 0 !important;
-    > label {
-        display: flex;
-        align-items: center;
-        margin-bottom: 0 !important;
+[class*=togglerlabel], 
+[for*=_select] {
+    display: inline-block !important;
+    + div {
+        display: inline-block !important;
+        margin-left: 20px;
     }
-    > div {
-        margin-left: auto;
-        > div {
-            > div[class*=color-picker-radiogroup] {
-                display: flex;
-                > label {
-                    margin-top: unset !important;
-                    margin-left: 1em;
-                    > span {
-                        min-height: 20px;
-                        min-width: 20px;
-                        > input+span {
-                            min-width: 23px;
-                            min-height: 23px;
-                        }
-                    }
-                }
-            }
-        }
-    }
+}
+
+[class*=togglerelement] {
+    border-left: 5px solid rgb(136, 136, 136);
+    padding-left: 1em;
+}
+
+[class*=togglerlastelement] {
+    margin-bottom: 2em;
 }
