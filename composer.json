@@ -4,8 +4,12 @@
     "type": "library",
     "authors": [
         {
+            "name": "Seven Group",
+            "email": "dir-tech@seven-group.com"
+        },
+        {
             "name": "Tenreiro Benjamin",
-            "email": "tenreiro.benjamin@gmail.com"
+            "email": "benjamin.tenreiro@key-performance-group.com"
         }
     ],
     "autoload": {
