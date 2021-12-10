@@ -1,6 +1,6 @@
 <?php
 
-namespace SevenGroupFrance\suluCustomToggleBundle;
+namespace SevenGroupFrance\SuluCustomToggleBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
