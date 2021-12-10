@@ -1,5 +1,5 @@
 {
-    "name": "sevengroupfrance/sulu-color-picker-bundle",
+    "name": "sevengroupfrance/sulu-custom-toggle-bundle",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -10,13 +10,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "sevenGroupFrance\\suluColorPickerBundle\\": "src"
+            "sevenGroupFrance\\suluCustomToggleBundle\\": "src"
         }
     },
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/sevenGroupFrance/sulu-color-picker-bundle/"
+            "url": "https://github.com/sevenGroupFrance/sulu-custom-toggle-bundle/"
         },
         {
             "type": "path",
