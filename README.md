@@ -33,3 +33,16 @@ Once installed, to use this new content type, you'll have to create a new proper
   </meta>
 </property>
 ```
+
+## Set your togglable fields
+You can use this toggle to show/hide elements on your front application just like a normal Sulu toggle, but you can also toggle elements on your back office so your back office doesn't get too messy.
+
+To do so, you'll need to create properties in your xml config file with a `name` that is the `custom_toggle` property's name, underscore `_` and whatever you want:
+```
+<property name="desc_text" type="text_editor">
+  <meta>
+      <title lang="en">Text field</title>
+  </meta>
+</property>
+```
+Be careful to put your properties right after the `custom_toggle` type property.
