@@ -30,17 +30,19 @@ class CustomToggle extends React.PureComponent {
       let inputAttr = input[i].parentElement.parentElement.parentElement.parentElement.previousSibling.getAttribute('for');
       inputAttr = inputAttr.substring(inputAttr.lastIndexOf('/') + 1, inputAttr.length);
       const togglerLabel = document.querySelectorAll('label[for*=' + inputAttr + ']');
-      togglerLabel[0].classList.add('togglerlabel');
+      for (let j = 0; j < togglerLabel.length; j++) {
+        togglerLabel[j].classList.add('togglerlabel');
+      }
       const label = document.querySelectorAll('label[for*=' + inputAttr + '_]');
       if (input[i].checked === true) {
-        for (let j = 0; j < label.length; j++) {
-          label[j].parentElement.parentElement.style.display = "block";
-          label[j].parentElement.parentElement.classList.add('togglerelement');
+        for (let k = 0; k < label.length; k++) {
+          label[k].parentElement.parentElement.style.display = "block";
+          label[k].parentElement.parentElement.classList.add('togglerelement');
           label[label.length - 1].parentElement.parentElement.classList.add('togglerlastelement');
         }
       } else {
-        for (let j = 0; j < label.length; j++) {
-          label[j].parentElement.parentElement.style.display = "none";
+        for (let k = 0; k < label.length; k++) {
+          label[k].parentElement.parentElement.style.display = "none";
         }
       }
     }
