@@ -28,10 +28,9 @@ class CustomToggle extends React.PureComponent {
 
     for (let i = 0; i < input.length; i++) {
       let inputAttr = input[i].parentElement.parentElement.parentElement.parentElement.previousSibling.getAttribute('for');
-      inputAttr = inputAttr.replace(/\\|\//g, '');
+      inputAttr = inputAttr.substring(inputAttr.lastIndexOf('/') + 1, inputAttr.length);
       const togglerLabel = document.querySelectorAll('label[for*=' + inputAttr + ']');
       togglerLabel[0].classList.add('togglerlabel');
-      /* togglerLabel[0].parentElement.classList.add('togglercontainer'); */
       const label = document.querySelectorAll('label[for*=' + inputAttr + '_]');
       if (input[i].checked === true) {
         for (let j = 0; j < label.length; j++) {
