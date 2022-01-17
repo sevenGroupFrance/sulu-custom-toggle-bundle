@@ -10,6 +10,13 @@
 [class*=togglerelement] {
     border-left: 5px solid rgb(136, 136, 136);
     padding-left: 1em;
+    [class*=togglerlabel] {
+        display: unset !important;
+        + div {
+            display: unset !important;
+            margin-left: unset;
+        }
+    }
 }
 
 [class*=togglerlastelement] {
