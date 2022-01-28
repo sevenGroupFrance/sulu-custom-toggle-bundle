@@ -1,9 +1,12 @@
-[class*=togglerlabel], 
-[for*=_select] {
-    display: inline-block !important;
-    + div {
+[class*=toggler-container] {
+    margin-bottom: unset !important;
+    [class*=togglerlabel], 
+    [for*=_select] {
         display: inline-block !important;
-        margin-left: 20px;
+        + div {
+            display: inline-block !important;
+            margin-left: 20px;
+        }
     }
 }
 
