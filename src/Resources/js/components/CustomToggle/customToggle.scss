@@ -3,9 +3,9 @@
     [class*=togglerlabel], 
     [for*=_select] {
         display: inline-block !important;
+        margin-right: 1em;
         + div {
             display: inline-block !important;
-            margin-left: 20px;
         }
     }
 }
