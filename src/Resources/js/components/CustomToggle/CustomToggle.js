@@ -29,6 +29,8 @@ class CustomToggle extends React.PureComponent {
     for (let i = 0; i < input.length; i++) {
       const togglerLabel = input[i].parentElement.parentElement.parentElement.parentElement.previousSibling
       togglerLabel.classList.add('togglerlabel');
+      const mainContainer = input[i].parentElement.parentElement.parentElement.parentElement.parentElement.parentElement
+      mainContainer.classList.add('toggler-container')
       let inputAttr = togglerLabel.getAttribute('for');
       inputAttr = inputAttr.substring(inputAttr.lastIndexOf('/') + 1, inputAttr.length);
       const label = document.querySelectorAll('label[for*=' + inputAttr + '_]');
