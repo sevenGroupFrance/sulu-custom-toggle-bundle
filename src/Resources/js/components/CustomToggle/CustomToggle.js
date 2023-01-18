@@ -27,22 +27,24 @@ class CustomToggle extends React.PureComponent {
     const input = document.querySelectorAll('input[role=switch]');
 
     for (let i = 0; i < input.length; i++) {
-      const togglerLabel = input[i].parentElement.parentElement.parentElement.parentElement.previousSibling
-      togglerLabel.classList.add('togglerlabel');
-      const mainContainer = input[i].parentElement.parentElement.parentElement.parentElement.parentElement.parentElement
-      mainContainer.classList.add('toggler-container')
-      let inputAttr = togglerLabel.getAttribute('for');
-      inputAttr = inputAttr.substring(inputAttr.lastIndexOf('/') + 1, inputAttr.length);
-      const label = document.querySelectorAll('label[for*=' + inputAttr + '_]');
-      if (input[i].checked === true) {
-        for (let k = 0; k < label.length; k++) {
-          label[k].parentElement.parentElement.style.display = "block";
-          label[k].parentElement.parentElement.classList.add('togglerelement');
-          label[label.length - 1].parentElement.parentElement.classList.add('togglerlastelement');
-        }
-      } else {
-        for (let k = 0; k < label.length; k++) {
-          label[k].parentElement.parentElement.style.display = "none";
+      const togglerLabel = input[i].parentElement.parentElement.parentElement.parentElement.previousSibling;
+      if (togglerLabel) {  
+        togglerLabel.classList.add('togglerlabel');
+        const mainContainer = input[i].parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+        mainContainer.classList.add('toggler-container');
+        let inputAttr = togglerLabel.getAttribute('for');
+        inputAttr = inputAttr.substring(inputAttr.lastIndexOf('/') + 1, inputAttr.length);
+        const label = document.querySelectorAll('label[for*=' + inputAttr + '_]');
+        if (input[i].checked === true) {
+          for (let k = 0; k < label.length; k++) {
+            label[k].parentElement.parentElement.style.display = "block";
+            label[k].parentElement.parentElement.classList.add('togglerelement');
+            label[label.length - 1].parentElement.parentElement.classList.add('togglerlastelement');
+          }
+        } else {
+          for (let k = 0; k < label.length; k++) {
+            label[k].parentElement.parentElement.style.display = "none";
+          }
         }
       }
     }
