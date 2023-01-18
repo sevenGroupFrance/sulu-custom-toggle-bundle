@@ -28,7 +28,7 @@ class CustomToggle extends React.PureComponent {
 
     for (let i = 0; i < input.length; i++) {
       const togglerLabel = input[i].parentElement.parentElement.parentElement.parentElement.previousSibling;
-      if (togglerLabel) {  
+      if (togglerLabel) {
         togglerLabel.classList.add('togglerlabel');
         const mainContainer = input[i].parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
         mainContainer.classList.add('toggler-container');
